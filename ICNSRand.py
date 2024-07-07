@@ -1,5 +1,5 @@
 import time
-//only uses time library
+
 class ICNSRandStream:
     time_epoch = int()
 
@@ -12,12 +12,12 @@ class ICNSRandStream:
         randnum = int(round(rand_base))
         
         if randnum < min_point:
-            print('less')
+            
             while randnum < min_point:
                 randnum *= 10
         if max_point != None:
             if randnum > max_point:
-                print('higher')
+                
                 while randnum > max_point:
                     randnum /=10
                 #randnum = randnum * 10
